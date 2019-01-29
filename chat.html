@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chat</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <body>
+    <header class="top-header">
+      <div class="header__top">
+        <div class="header__column">
+          <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
+        </div>
+        <div class="header__column"><span class="header_time">18:38</span></div>
+        <div class="header__column">
+          <i class="fa fa-moon-o"></i> <i class="fa fa-bluetooth"></i>
+          <span class="header_batterty"
+            >100% <i class="fa fa-battery-full"></i
+          ></span>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__column">
+          <a href="chats.html"> <i class="fa fa-chevron-left fa-lg"></i> </a>
+        </div>
+        <div class="header__column"><span class="header__text">LYNN</span></div>
+        <div class="header__column">
+          <i class="fa fa-search"></i> <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main class="chat">
+      <div class="date-divider">
+        <span class="date-divider__text">Wednesday, August 2, 2017 </span>
+      </div>
+      <div class="chat__message chat__message--from-me">
+        <span class="chat__message-time">17:55</span>
+        <span calss="chat__message-body">Hello! This is a test message.</span>
+      </div>
+      <div class="chat__message chat__message--to-me">
+        <img src="images/avatar.jpg" alt="" class="chat__message-favatar" />
+        <div class="chat__message-center">
+          <h3 class="chat__message-username">Lynn</h3>
+          <span calss="chat__message-body">And this is an answer</span>
+        </div>
 
-<body>
-  <header>
-    <div class="header__top">
-      <div class="header__column">
-        <i class="fa fa-plane"></i>
-        <i class="fa fa-wifi"></i>
+        <span class="chat__message-time">19:30</span>
       </div>
-      <div class="header__column">
-        <span class="header_time">18:38</span>
-      </div>
-      <div class="header__column">
-        <i class="fa fa-moon-o"></i>
-        <i class="fa fa-bluetooth"></i>
-        <span class="header_batterty">100% <i class="fa fa-battery-full"></i></span>
+    </main>
+    <div class="type-message">
+      <i class="fa fa-plus fa-2x"></i>
+      <div class="type-message_input">
+        <input type="text" /> <i class="fa fa-smile-o"></i>
+        <span class="record-message"> <i class="fa fa-microphone"></i> </span>
       </div>
     </div>
-    <div class="header__bottom">
-      <div class="header__column">
-        <a href="chats.html">
-          <i class="fa fa-chevron-left fa-lg"></i>
-        </a>
-      </div>
-      <div class="header__column">
-        <span class="header__text">LYNN</span>
-      </div>
-      <div class="header__column">
-        <i class="fa fa-search"></i>
-        <i class="fa fa-bars"></i>
-      </div>
-    </div>
-  </header>
-  <main class="chat">
-    <div class="date-divider">
-      <span class="date-divider__text">Wednesday, August 2, 2017 </span>
-    </div>
-    <div class="chat__message chat__message--from-me">
-      <span class="chat__message-time">17:55</span>
-      <span calss="chat__message-body">Hello! This is a test message.</span>
-
-    </div>
-    <div class="chat__message chat__message--to-me">
-      <img src="images/avatar.jpg" alt="" class="chat__message-favatar">
-      <div class="chat__message-center">
-        <h3 class="chat__message-username">Lynn</h3>
-        <span calss="chat__message-body">And this is an answer</span>
-      </div>
-
-      <span class="chat__message-time">19:30</span>
-    </div>
-  </main>
-  <div class="type-message">
-    <i class="fa fa-plus fa-2x"></i>
-    <div class="type-message_input">
-      <input type="text">
-      <i class="fa fa-smile-o"></i>
-      <span class="record-message">
-        <i class="fa fa-microphone"></i>
-      </span>
-    </div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
