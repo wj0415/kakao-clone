@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
-    <header class="top-header">
+  <body class="body-chat">
+    <header class="top-header chat-header">
       <div class="header__top">
         <div class="header__column">
           <i class="fa fa-plane"></i> <i class="fa fa-wifi"></i>
@@ -42,24 +42,29 @@
       </div>
       <div class="chat__message chat__message--from-me">
         <span class="chat__message-time">17:55</span>
-        <span calss="chat__message-body">Hello! This is a test message.</span>
+        <span class="chat__message-body">Hello! This is a test message.</span>
       </div>
       <div class="chat__message chat__message--to-me">
         <img src="images/avatar.jpg" alt="" class="chat__message-favatar" />
         <div class="chat__message-center">
           <h3 class="chat__message-username">Lynn</h3>
-          <span calss="chat__message-body">And this is an answer</span>
+          <span class="chat__message-body">And this is an answer</span>
         </div>
 
         <span class="chat__message-time">19:30</span>
       </div>
     </main>
     <div class="type-message">
-      <i class="fa fa-plus fa-2x"></i>
+      <i class="fa fa-plus fa-lg"></i>
       <div class="type-message_input">
         <input type="text" /> <i class="fa fa-smile-o"></i>
-        <span class="record-message"> <i class="fa fa-microphone"></i> </span>
+        <span class="record-message">
+          <i class="fa fa-microphone fa-lg"></i>
+        </span>
       </div>
+    </div>
+    <div class="bigScreenText">
+      <span>Please make your screen smaller</span>
     </div>
   </body>
 </html>
